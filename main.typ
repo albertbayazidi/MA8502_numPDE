@@ -1,4 +1,4 @@
-#import "misc/commands/commands.typ"
+#import "misc/commands/commands.typ": amazed
 
 hello from main.typ
 
