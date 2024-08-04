@@ -1,0 +1,4 @@
+*.py linguist-vendored=true
+*.tex linguist-vendored=true
+*.sty linguist-vendored=true
+
