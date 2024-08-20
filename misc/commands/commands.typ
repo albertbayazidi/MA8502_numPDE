@@ -1,1 +1,2 @@
-#let amazed(term) = box[✨ #term ✨]
+#import "integrals.typ": * 
+#import "utils.typ": *

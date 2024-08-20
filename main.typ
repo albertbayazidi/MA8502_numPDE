@@ -1,8 +1,17 @@
-#import "misc/commands/commands.typ": amazed
-
-hello from main.typ
-
-#amazed("LIGMA")
+#outline(indent: auto)
 
 
-#include "chapters/chap1/test.typ"
+#pagebreak()
+
+
+
+#set heading(numbering:"1.")
+
+= Intro
+#include "chapters/misc/intro_forelesning.typ"
+
+= Crash course
+#include "chapters/misc/crash_kurs.typ"
+
+
+
