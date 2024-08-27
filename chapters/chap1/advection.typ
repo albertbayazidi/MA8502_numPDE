@@ -2,22 +2,27 @@
 
 Motivation: we wish to solve fluid dynamical equations. To do this advection will be centrel in propagating inital condtions and sutch.
 
-$diff_t u + u dot gradient u - v laplace u + & gradient p = f \
+$ diff_t u + u dot gradient u - v laplace u + & gradient p = f \
  & gradient dot u = 0 $
 
 We start of by lineariztion, and introducing timestepping. This will results in the following
 
-$sigma u + b dot gradient u - v gradient u + gradient p = f \ 
-gradient dot u = 0$
+$ sigma u + b dot gradient u - v gradient u + gradient p = f \ 
+gradient dot u = 0 $
 
-in some cases the impact of the speed $gradient u$ could be more dominating then the viscity $v gradient u$ lets look at a model probelm where this is the case.
+in some cases the impact of the speed ($gradient u$) could be more dominating then the viscity $v gradient u$. Lets look at a model probelm where this is the case.
 
 (as a side note the first eqaution is a saddle point probelm and one could also look at a model problem for this too. This could be called stokes problem.)
 
 === advection-diff-reaction
 
-$sigma u + b gradient u - v laplace y = f  "and some bc" $
+$ sigma u + b gradient u - v laplace y = f  "and some bc" $
 
+=== stokes problem
+
+$  u_t  = v #diffN(2, $u$, $v$) $ 
+
+and some more that i didn't write down.
 
 we will be looking at each of these model problems seperatily and build up to solving the real navir stokes. 
 
@@ -30,20 +35,17 @@ we will be looking at each of these model problems seperatily and build up to so
 === Model probelm
 
 $ epsilon laplace u + b gradient u + c u = f "in" Omega \
-u = 0 "on" diff Omega$
+u = 0 "on" diff Omega $
 
-$b : Omega arrow RR^n "advection" \
-epsilon > 0 "diffusivity"
-c : Omega arrow RR "reaction term"$
+$b : Omega arrow RR^n "advection", epsilon > 0 "diffusivity", c : Omega arrow RR "reaction term"$
 
 
 typical assumtion are that 
-- $epsilon << norm(b)_(#lInfOmega),  norm(c)_(#lInfOmega) << norm(b)_(#lInfOmega)$
+- $epsilon << norm(b)_(#lInfOmega), space norm(c)_(#lInfOmega) << norm(b)_(#lInfOmega)$
 
 - $"div" b = 0 "alteratively", c(x) - 1/2 gradient dot b(x) gt.eq c_0 $
 
-As $epsilon$ gets smaller we can ignore it, we get the reduced probelm
-$b dot gradient u + c u = f$ this will introduce a probelm with the bc since we no longer have a second order term. also as epsilon goes to zero the problem becomes similar to a problem that can be solved by the method of characterisics. From the method of characterisics we know that the boundry condtions are only needed on the inflow boundry.
+As $epsilon$ gets smaller we can ignore it, we get the reduced probelm. $b dot gradient u + c u = f$ this will introduce a probelm with the bc since we no longer have a second order term. also as epsilon goes to zero the problem becomes similar to a problem that can be solved by the method of characterisics. From the method of characterisics we know that the boundry condtions are only needed on the inflow boundry.
 
 
 the invered pointing blue curves can be written as. $Gamma^- = {x in diff Omega | b(x) dot n(x) < 0}$
