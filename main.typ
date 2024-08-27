@@ -1,17 +1,18 @@
 #outline(indent: auto)
 
-
 #pagebreak()
-
-
 
 #set heading(numbering:"1.")
 
 = Intro
-#include "chapters/misc/intro_forelesning.typ"
+#include "chapters/_misc/intro_forelesning.typ"
 
 = Crash course
-#include "chapters/misc/crash_kurs.typ"
+#include "chapters/_misc/crash_kurs.typ"
+#include "chapters/_misc/crash_kurs_part2.typ"
 
+
+= Advection
+#include "chapters/chap1/advection.typ"
 
 

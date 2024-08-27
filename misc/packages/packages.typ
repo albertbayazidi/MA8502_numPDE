@@ -1,0 +1,3 @@
+#import "./lemmify.typ": *
+
+
