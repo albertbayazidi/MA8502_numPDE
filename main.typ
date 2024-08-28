@@ -13,6 +13,6 @@
 
 
 = Advection
-#include "chapters/chap1/advection.typ"
+
 
 
