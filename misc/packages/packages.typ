@@ -1,3 +1,2 @@
-#import "./lemmify.typ": *
-
+#import "./theorems.typ": *
 

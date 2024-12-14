@@ -1,4 +1,5 @@
-#import "../../misc/commands/commands.typ": * 
+#import "../../misc/commands/utils.typ": * 
+#import "../../misc/packages/packages.typ": *
 
 $ diff_t u + u dot gradient u - v laplace u + & gradient p = f \
  & gradient dot u = 0 $
@@ -58,16 +59,16 @@ $ epsilon gradient u + b laplace u + c u = f "in" Omega \ u = 0 "on" Gamma $
 
 Natrual weak formulation
 
-$ "Find" u in #H10 "st" #faspace v in #H10 \ 
+$ "Find" u in #H10 "st" fASpace v in #H10 \ 
 underbrace(a(u,v),(gradient u, gradient v )_Omega + (b gradient u,v)_Omega + (c u,v)) = l(v) $
 
 Lax - milgram 
 
-$norm(a(u,v)) lt.eq c norm(u)_(V_0) norm(v)_(V_0) #faspace v ,u $ 
+$norm(a(u,v)) lt.eq c norm(u)_(V_0) norm(v)_(V_0) fASpace v ,u $ 
 
-$a(u,u) gt.eq alpha norm(u)^2_(V_0) #faspace y in V_0 $
+$a(u,u) gt.eq alpha norm(u)^2_(V_0) fASpace y in V_0 $
 
-We are going to use the following norm. $norm(v)_(V_0) = norm(gradient v)_Omega #faspace v in #H10$
+We are going to use the following norm. $norm(v)_(V_0) = norm(gradient v)_Omega fASpace v in #H10$
 
 - coercivity $ u in #H10$
 

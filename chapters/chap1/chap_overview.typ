@@ -1,0 +1,2 @@
+- A primer on finite element methods. 
+- Abstract Galerkin approach, Galerkin orthogonality and Cea's lemma. 

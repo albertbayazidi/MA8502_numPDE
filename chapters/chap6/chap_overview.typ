@@ -1,0 +1,3 @@
+- *Strong and Weak Formulation*: Analysis of the strong and weak formulations of advection-reaction problems, including \(L^2\)-coercivity of the continuous weak formulation.  
+- *Central-Flux Based DG Formulation*: Derivation of the central-flux-based discontinuous Galerkin formulation for advection-reaction problems, discrete coercivity in the central-flux norm, boundedness, and \(L^2\) approximation errors. Includes discussion of a priori error estimates, convergence rates, and the sub-optimality of error estimates.  
+- *Upwind-Flux Formulation*: Derivation of the upwind-flux formulation, boundedness on orthogonal subscales, and improved error estimates. Discussion of conservation properties and comparisons between central and upwind fluxes.  

@@ -1,9 +1,8 @@
 #import "../../misc/packages/packages.typ": *
-#show: thm-rules
 
 === Bevis (Cea's lemma)
 
- $u$ og $u_h$ er begge i $V$, dermed vil også en liære kobo også være det. Vi kan dermed bruke egenskapene nevte over.
+ $u$ og $u_h$ er begge i $V$, dermed vil ogsaa en liaere kobo ogsaa vaere det. Vi kan dermed bruke egenskapene nevte over.
 
 $ alpha norm(u-u_h)^2_a  & underbrace(lt.eq,"coesiverty") a(u-u_h,u-u_h )  \ 
 & lt.eq a(u-u_h,u-u_h -v_h + v_h) \
@@ -13,10 +12,7 @@ $ alpha norm(u-u_h)^2_a  & underbrace(lt.eq,"coesiverty") a(u-u_h,u-u_h )  \
 $
 Krysning av det kvadrerte leddet og det siste leddet gir oss det resultatet vi ønsker.
 
-
-
-
-#definition(name: "A Finite Element", numbering: none)[
+#definition("A Finite Element")[
 q  A FEM is a tuple (T,P,$Sigma$), \
   where \
   - T is a simplex. (polyheadron)

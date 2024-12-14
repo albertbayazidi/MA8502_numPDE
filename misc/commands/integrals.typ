@@ -1,41 +1,23 @@
 // surfaceIntegrals
-
-// TEST#let integralOmegaFun(function,centered: false) = {
-//set align(centered) if centered
- // [$integral_(Omega) function$]
-//}
-
-#let integralOmegaFun(function,centered: false) = {
-  if centered [
-    $
-    integral_(Omega) function
-    $
-]else [$integral_(Omega) function$]
+#let integralOmegaFun(function) = {
+$integral_(Omega) function$
 }
 
-#let integralBoundFun(bound, function,centered: false) = {
-  if centered [
-    $
-    integral_(bound) function
-    $
-]else [$integral_(bound) function$]
+#let integralDomainFun(domain, function) = {
+    $integral_(domain) function$
 }
 
 
 // surfaceIntegrals
-#let surfaceIntegralOmegaFun(function,centered: false) = {
-  if centered [
-    $
-    integral_(diff Omega) function
-    $
-]else [$integral_(diff Omega) function$]
+#let surfaceIntegralOmegaFun(function) = {
+$integral_(diff Omega) function$
 }
 
-#let surfaceIntegralBoundFun(bound, function,centered: false) = {
-  if centered [
-    $
-    integral_(diff bound) function
-    $
-]else [$integral_(diff bound) function$]
+#let surfaceIntegralDomainFun(domain, function) = {
+$integral_(diff domain) function$
 }
 
+// innerproducts
+#let innerPartialOmega(left,right) = $(left,right)_(partial Omega)$
+#let innerOmega(left,right) = $(left , right)_(Omega)$ 
+#let inner(left,right,space) = $(left , right)_(space)$

@@ -1,0 +1,4 @@
+- *Heuristic Motivation and Derivation*: Derivation of the symmetric interior penalty (SIP) method, covered in the previous week.  
+- *Inverse Estimates*: Discussion of inverse estimates, also from the previous week.  
+- *Discrete Coercivity, Boundedness, and Cea's Lemma*: Analysis of these concepts as they apply to the SIP method.  
+- *Local Trace Inequality and Error Estimates*: Exploration of the local trace inequality, error estimates for the \(L^2\) projection, and the final a priori error estimate.  

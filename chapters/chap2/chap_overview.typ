@@ -1,0 +1,6 @@
+- *Strong and Weak Formulation*: Understanding the strong and weak forms of advection-diffusion-reaction problems.  
+- *Boundary Conditions*: Analysis of inflow, outflow, and characteristic boundaries in these problems.  
+- *Reduced Problem and Boundary Layers*: Exploration of reduced problem formulations and the emergence of boundary layers.  
+- *Well-Posedness*: Examination of the well-posedness of advection-diffusion-reaction problems under various conditions.  
+- *Standard Finite Element Methods*: Discussion of standard finite element methods (FEM) for these problems.  
+- *Challenges with Boundary Layers and High Peclet Numbers*: Understanding the limitations and failures of standard FEM when boundary layers or large Peclet numbers are present.
