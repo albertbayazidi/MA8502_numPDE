@@ -7,3 +7,5 @@
 == Model equation
 #include "central_flux.typ"
 
+== Stability and apriori estimate 
+//#include "stability_and_apriori_estimate.typ"

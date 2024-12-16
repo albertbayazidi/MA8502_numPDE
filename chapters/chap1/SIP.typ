@@ -3,7 +3,7 @@
 
 Given the poisson problem we wish to solve it using dg. The formulation becomes
 #poissonProb 
-Find $u_h in v_h #dgPolynomialSpace fASpace v_h in V_h "st" a_h(u_h,v_h) = l_h(v_h)$
+Find $u_h in v_h polynomialSapceElement fASpace v_h in V_h "st" a_h(u_h,v_h) = l_h(v_h)$
 
 
 we can't just move over a gradient from u to v as we have done before.v_h is not contiuouse over from one elemet to another. Lets assume $u in H^2(Omega)$ in additon we now proform integraion by part over each element and not the whole domain. 
@@ -174,10 +174,10 @@ $ 1/2 norm(u_h - v_h)_(a_h) lt.eq hat(C) norm(u-v_h)_a_(h*) $
 == Apiori error estimate for SIP
 
 $ norm(v_h)_a_h = sqrt((norm(grad v)^2_element 
-+ gamma(sqrtMinus(h)[v_h])^2_facets)) fASpace v in #dgPolynomialSpace $
++ gamma(sqrtMinus(h)[v_h])^2_facets)) fASpace v in polynomialSapceElement $
 
 $ norm(v_h)_a_h =sqrt(( norm(grad v)^2_element 
-+ gamma(sqrtMinus(h)[v_h])^2_facets)) fASpace v in #dgPolynomialSpace $
++ gamma(sqrtMinus(h)[v_h])^2_facets)) fASpace v in polynomialSapceElement $
 
 
 

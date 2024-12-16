@@ -25,7 +25,7 @@ and some more that i didn't write down.
 
 we will be looking at each of these model problems seperatily and build up to solving the real navir stokes. 
 
-(Det som står over skal skrives om. tanken her er å vise at man kan skrive om nativer stokes til flere små oppgaver)
+(Det som staar over skal skrives om. tanken her er aa vise at man kan skrive om nativer stokes til flere smaa oppgaver)
 
 == ADR problem
 

@@ -8,7 +8,7 @@
 #pagebreak()
 
 = Intro
-#include "chapters/_misc/intro_forelesning.typ"
+//#include "chapters/_misc/intro_forelesning.typ"
 
 = Crash course
 //#include "chapters/_misc/crash_kurs.typ"
@@ -18,7 +18,7 @@
 #set heading(numbering:"1.")
 
 = Galerkin Approach and Cea's Lemma
-#include "chapters/chap1/chap1.typ"
+//#include "chapters/chap1/chap1.typ"
 
 = Advection-diffusion-reaction problems as model problems
 //#include "chapters/chap2/chap2.typ"

@@ -20,9 +20,10 @@ using the fact that $a(v,v) gt.eq c_0 norm(v)_Gamma^2
 Derivation of the central flux formulation
 we wish to replace o
 
-$V arrow V_h = #dgPolynomialSpace$
+$V arrow V_h = polynomialSapceElement$
 
-we take $v_h, w_h in #dgPolynomialSpace $ here we drop the h, but the formulation is for the dicrete case
+
+we take $v_h, w_h in polynomialSapceElement $ here we drop the h, but the formulation is for the dicrete case
 
 $
 (b dot grad v, w)_element 
